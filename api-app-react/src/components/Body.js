@@ -7,7 +7,7 @@ const Body = ({course}) => {
     return (
           <div className="mix col-lg-3 col-md-4 col-sm-6 finance">
             <div className="course-item">
-              <div className="course-thumb set-bg" data-setbg="img/courses/1.jpg" style={{backgroundImage: "url('img/courses/1.jpg')"}}>
+              <div className="course-thumb set-bg" data-setbg="img/courses/1.jpg" style={{backgroundImage: "url('"+course.filePresentation+"')"}}>
                 {/* <Link to='/login'>
                 <div className="price" >Suivre</div>
                 </Link> */}

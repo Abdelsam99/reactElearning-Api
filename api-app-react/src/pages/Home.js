@@ -37,6 +37,17 @@ const Home = () => {
       .get("http://127.0.0.1:8000/elearning/categorie/list/")
       .then((res) => setData(res.data));
   };
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheck = (checked) => {
+    setIsChecked(checked);
+    console.log(checked);
+    if (isChecked) {
+      getData();
+    }else{
+      getData();
+    }
+  };
   return (
     <div>
       <Header />
@@ -73,7 +84,7 @@ const Home = () => {
             {data
               .sort((a, b) => b.id - a.id)
               .map((cat) => (
-                <Category key={cat.id} category={cat}/>
+                <Category key={cat.id} category={cat} isChecked={isChecked} onCheck={handleCheck}/>
               ))}
           </div>
         </div>
