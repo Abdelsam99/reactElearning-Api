@@ -7,6 +7,7 @@ import Course from "./pages/Course";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Lesson from "./pages/Lesson";
+import PageError from "./pages/PageError";
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/leson" element={<Lesson />} />
         {/* p */}
-        {/* <Route path="/*" element={<PageError />} /> */}
+        <Route path="/*" element={<PageError />} />
       </Routes>
     </BrowserRouter>
   );

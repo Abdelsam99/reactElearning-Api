@@ -12,6 +12,7 @@ const Course = () => {
   const [cat, setCat] = useState('');
   const [cours, setCours] = useState([]);
   const [isClickCategory, setisClickCategory] = useState(false);
+  
   useEffect(() => {
     axios.get("http://127.0.0.1:8000/elearning/categorie/list/").then((res) => {
       setCategorie(res.data);
@@ -89,7 +90,7 @@ const Course = () => {
               className="control active mixitup-control-active"
               data-filter="all"
             >
-              All
+            <Link to="/course">All</Link>
             </li>
             {categorie.map((category) => (
               <>

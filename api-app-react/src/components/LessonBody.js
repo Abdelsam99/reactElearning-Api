@@ -3,6 +3,7 @@ const LessonBody = ({ onClickParent, content }) => {
   const handelValue = (e) => {
     onClickParent({ video: e.target.value, name: e.target.textContent });
   };
+  console.log(content);
   return (
     <>
       <li>

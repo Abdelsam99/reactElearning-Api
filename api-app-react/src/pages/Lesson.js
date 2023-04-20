@@ -2,6 +2,8 @@ import React,{useRef, useState,useEffect} from 'react';
 import ReactPlayer from 'react-player'
 import axios from "axios";
 import LessonBody from '../components/LessonBody';
+import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 const Lesson = () => {
     const [duration, setDuration] = useState(null);
@@ -35,10 +37,24 @@ const Lesson = () => {
 
     return (
         <>
+         <Header />
+         <div
+        className="page-info-section set-bg"
+        data-setbg="img/page-bg/1.jpg"
+        style={{ backgroundImage: "url('img/page-bg/1.jpg')" }}
+      >
+        <div className="container">
+          <div className="site-breadcrumb">
+            <Link to="/">Acceuil</Link>
+            <Link to="/course"><span className='px-0 text-light'>Cours</span></Link>
+            <span>Lesson</span>
+          </div>
+        </div>
+      </div>
 {/* Page  */}
-<section className="blog-page spad pb-0">
-  <div className="container">
-    <div className="row contact-form-warp">
+<section className="search-section ss-other-page">
+  <div className="container-fluid">
+    <div className="row contact-form-warp" style={{ padding: '55px'}}>
       <div className="col-lg-9">
         {/* blog post */}
 
@@ -49,19 +65,19 @@ const Lesson = () => {
           <div className="blog-metas">
             <div className="blog-meta author">
               <div className="post-author set-bg" data-setbg="img/authors/1.jpg" />
-              <a href="#">James Smith</a>
+              <a href="#" style={{color: 'white'}}>James Smith</a>
             </div>
             <div className="blog-meta">
-              <a href="#">Development</a>
+              <a href="#" style={{color: 'white'}}>Development</a>
             </div>
             <div className="blog-meta">
-              <a href="#">June 12, 2018</a>
+              <a href="#" style={{color: 'white'}}>June 12, 2018</a>
             </div>
-            <div className="blog-meta">
-            {duration && <a href="#">Durée de la vidéo : {formattedDuration}</a> }
+            <div className="blog-meta" >
+            {duration && <a href="#" style={{color: 'white'}}>Durée de la vidéo : {formattedDuration}</a> }
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna. </p>
+          <p style={{color: 'white'}}>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna. </p>
           <a href="#" className="site-btn readmore">Read More</a>
         </div>
       </div>
