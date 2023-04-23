@@ -41,7 +41,7 @@ const Home = () => {
 
   const handleCheck = (checked) => {
     setIsChecked(checked);
-    console.log(checked);
+    // console.log(checked);
     if (isChecked) {
       getData();
     }else{

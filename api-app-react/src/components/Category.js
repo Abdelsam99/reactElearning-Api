@@ -74,7 +74,7 @@ const Category = ({isChecked,onCheck, category }) => {
     setdeleteCategorieID(deleteCategorieID)
   };
   const handelSubmitDelete = () => {
-    console.log('moi');
+    // console.log('moi');
       axios
         .delete("http://127.0.0.1:8000/elearning/categorie/" + deleteCategorieID+ "/delete")
         .then(() => {
@@ -89,7 +89,7 @@ const Category = ({isChecked,onCheck, category }) => {
       setError(true);
     } else {
       const id = categoryId;
-      console.log(id);
+      // console.log(id);
       axios
         .put("http://127.0.0.1:8000/elearning/categorie/" + id + "/update", {
           name: name,
