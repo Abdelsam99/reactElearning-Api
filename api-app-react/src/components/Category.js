@@ -11,7 +11,7 @@ const Category = ({isChecked,onCheck, category }) => {
   const [categoryId, setCategoryId] = useState(category.id);
   const [autor, setAutor] = useState(1);
   const [error, setError] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModalCourse] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [name, setName] = useState("");
@@ -41,7 +41,7 @@ const Category = ({isChecked,onCheck, category }) => {
         )
         .then(() => {
           setError(false);
-          setShowModal(false);
+          setShowModalCourse(false);
           setIsCat(true)
           onCheck(isCat)
           setDescription("");
@@ -119,7 +119,7 @@ const Category = ({isChecked,onCheck, category }) => {
             {category.categories.length > 1 ? "Cours" : "Cour"}
           </span>{" "}
           <br />
-          <Button onClick={() => setShowModal(true)} variant="primary mt-2">
+          <Button onClick={() => setShowModalCourse(true)} variant="primary mt-2">
             <i className="bi bi-plus"></i>Cours
           </Button>
         </div>
@@ -200,7 +200,7 @@ const Category = ({isChecked,onCheck, category }) => {
       ) : (
         ""
       )}
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showModal} onHide={() => setShowModalCourse(false)}>
           <Modal.Header closeButton>
             <Modal.Title>Nouveau cours</Modal.Title>
           </Modal.Header>
@@ -283,7 +283,7 @@ const Category = ({isChecked,onCheck, category }) => {
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="danger" onClick={() => setShowModal(false)}>
+            <Button variant="danger" onClick={() => setShowModalCourse(false)}>
               Fermer
             </Button>
           </Modal.Footer>

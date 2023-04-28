@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Category from "../components/Category";
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModalCategorie] = useState(false);
 
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
@@ -21,7 +21,7 @@ const Home = () => {
         })
         .then(() => {
           setError(false);
-          setShowModal(false);
+          setShowModalCategorie(false);
           setName("");
           getData();
         });
@@ -58,7 +58,7 @@ const Home = () => {
       >
         <div className="container">
           <div className="hero-text text-white">
-            <h2>Obtenu des meilleurs cours en ligne</h2>
+            <h2>Obtenir des meilleurs cours en ligne</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               malesuada lorem maximus mauris scelerisque, at rutrum nulla <br />{" "}
@@ -73,7 +73,7 @@ const Home = () => {
             <h2>Nos Catégories de cours</h2>
             <p>
               <Button
-                onClick={() => setShowModal(true)}
+                onClick={() => setShowModalCategorie(true)}
                 className="site-btn readmore"
               >
                 Ajouter Catégorie
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showModal} onHide={() => setShowModalCategorie(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Ajouter une nouvelle catégorie</Modal.Title>
         </Modal.Header>
@@ -120,7 +120,7 @@ const Home = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={() => setShowModal(false)}>
+          <Button variant="danger" onClick={() => setShowModalCategorie(false)}>
             Fermer
           </Button>
         </Modal.Footer>
