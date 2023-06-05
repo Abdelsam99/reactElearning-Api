@@ -125,69 +125,6 @@ const Course = () => {
               )}
             </div>
           )}
-
-          {/* <div className="mix col-lg-3 col-md-4 col-sm-6 design">
-        <div className="course-item">
-          <div className="course-thumb set-bg" data-setbg="img/courses/2.jpg" style={{backgroundImage: "url('img/courses/2.jpg')"}}>
-            <div className="price">Price: $15</div>
-          </div>
-          <div className="course-info">
-            <div className="course-text">
-              <h5>IT Development</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
-              <div className="students">120 Students</div>
-            </div>
-            <div className="course-author">
-              <div className="ca-pic set-bg" data-setbg="img/authors/2.jpg" style={{backgroundImage: "url('img/authors/2.jpg')"}}/>
-              <p>William Parker, <span>Developer</span></p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-          {/* <div className="featured-courses">
-      <div className="featured-course course-item">
-        <div className="course-thumb set-bg" data-setbg="img/courses/f-1.jpg" style={{backgroundImage: "url('img/courses/f-1.jpg')"}}>
-          <div className="price">Price: $15</div>
-        </div>
-        <div className="row">
-          <div className="col-lg-6 offset-lg-6 pl-0">
-            <div className="course-info">
-              <div className="course-text">
-                <div className="fet-note">Featured Course</div>
-                <h5>HTNL5 &amp; CSS For Begginers</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna</p>
-                <div className="students">120 Students</div>
-              </div>
-              <div className="course-author">
-                <div className="ca-pic set-bg" data-setbg="img/authors/1.jpg" style={{backgroundImage: "url('img/authors/1.jpg')"}}/>
-                <p>William Parker, <span>Developer</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="featured-course course-item">
-        <div className="course-thumb set-bg" data-setbg="img/courses/f-2.jpg" style={{backgroundImage: "url('img/courses/f-2.jpg')"}}>
-          <div className="price">Price: $15</div>
-        </div>
-        <div className="row">
-          <div className="col-lg-6 pr-0">
-            <div className="course-info">
-              <div className="course-text">
-                <div className="fet-note">Featured Course</div>
-                <h5>HTNL5 &amp; CSS For Begginers</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. Integer et pellentesque urna</p>
-                <div className="students">120 Students</div>
-              </div>
-              <div className="course-author">
-                <div className="ca-pic set-bg" data-setbg="img/authors/2.jpg" style={{backgroundImage: "url('img/authors/2.jpg')"}}/>
-                <p>William Parker, <span>Developer</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
         </div>
       </section>
       <br />

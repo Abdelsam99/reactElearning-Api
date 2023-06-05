@@ -27,13 +27,10 @@ const Lesson = () => {
         useEffect(() => {
           axios.get("http://127.0.0.1:8000/elearning/lesson/list/").then((res) => {
             setLesson(res.data);
-            // console.log(res.data[0].name);
           });
         }, []);
         const playerRef = useRef(null);
         const videoUrl = `${selectedData}`;
-        // if selectedData
-        // console.log(selectedData.name);
 
     return (
         <>
