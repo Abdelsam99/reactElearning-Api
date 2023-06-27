@@ -27,6 +27,7 @@ const Course = () => {
       )
       .then((res) => {
         setCours(res.data);
+        console.log(res.data);
       }).catch(error => console.error(error));
   };
   const handelClickList =(e)=>{

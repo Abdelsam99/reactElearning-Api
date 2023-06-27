@@ -127,7 +127,7 @@ const Body = ({ course }) => {
       <div className="course-item">
         <div
           className="course-thumb set-bg"
-          data-setbg="img/courses/1.jpg"
+          data-setbg={ '" ' +course.filePresentation + '"'}
           style={{ backgroundImage: "url('" + course.filePresentation + "')" }}
         >
           {/* <Link to='/login'>
@@ -138,7 +138,7 @@ const Body = ({ course }) => {
           </Link>
         </div>
         <div className="course-info">
-          <div className="course-text">
+          <div className="course-text px-2">
             <h6>{course.title}</h6>
             <p>
               {course.description.length > taille
